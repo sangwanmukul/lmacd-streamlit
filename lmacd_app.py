@@ -25,6 +25,16 @@ import base64
 import pandas as pd
 import json
 
+import subprocess
+import streamlit as st
+
+try:
+    subprocess.run(["tesseract", "--version"], check=True)
+    st.success("✅ Tesseract OCR engine detected")
+except Exception as e:
+    st.error(f"Tesseract not found: {e}")
+
+
 # -----------------------------
 # CONFIGURATION
 # -----------------------------
