@@ -7,6 +7,8 @@
 # A clean, publication-grade Streamlit interface demonstrating the adaptive
 # CAPTCHA framework with multi-step challenge, improved logging, and rich theoretical context.
 # ---------------------------------------------------------------
+import subprocess
+subprocess.run(["pip", "show", "pytesseract"])
 
 import streamlit as st
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
