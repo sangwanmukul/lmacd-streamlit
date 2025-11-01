@@ -1,7 +1,11 @@
 streamlit
 opencv-python-headless
+pytesseract
+Pillow
 numpy
-pillow
-matplotlib
 scipy
+matplotlib
 scikit-learn
+pandas
+torch
+torchvision
