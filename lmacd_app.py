@@ -34,6 +34,8 @@ try:
 except Exception as e:
     st.error(f"Tesseract not found: {e}")
 
+import os
+os.environ["STREAMLIT_WATCHER_TYPE"] = "none"
 
 # -----------------------------
 # CONFIGURATION
